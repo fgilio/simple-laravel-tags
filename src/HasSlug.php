@@ -13,12 +13,12 @@ trait HasSlug
         });
     }
 
-    protected function generateSlug(string $locale): string
+    protected function generateSlug($name): string
     {
         $slugger = config('tags.slugger');
 
         $slugger = $slugger ?: 'str_slug';
 
-        return call_user_func($slugger, $this->name);
+        return call_user_func($slugger, $name);
     }
 }
