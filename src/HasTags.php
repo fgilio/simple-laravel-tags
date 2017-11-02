@@ -228,7 +228,7 @@ trait HasTags
         return $this;
     }
 
-    protected static function convertToTags($values, $type = nulll)
+    protected static function convertToTags($values, $type = null)
     {
         return collect($values)->map(function ($value) use ($type) {
             if ($value instanceof Tag) {
