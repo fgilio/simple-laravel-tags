@@ -1,21 +1,13 @@
 {
-    "name": "publicala/laravel-tags",
+    "name": "spatie/laravel-tags",
     "description": "Add tags and taggable behaviour to your Laravel app",
     "keywords": [
         "spatie",
-        "publicala",
-        "publica.la",
         "laravel-tags"
     ],
-    "homepage": "https://gitlab.com/publicala/laravel-tags",
+    "homepage": "https://github.com/spatie/laravel-tags",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Franco Gilio",
-            "email": "fgilio@publica.la",
-            "homepage": "https://publica.la",
-            "role": "CTO"
-        },
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
