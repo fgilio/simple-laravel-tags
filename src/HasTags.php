@@ -89,6 +89,28 @@ trait HasTags
         });
     }
 
+    public function scopeWithAnyTagsLike(Builder $query, $tags, string $type = null): Builder
+    {
+        $tags = static::convertToTagsLike($tags, $type);
+
+        return $query->whereHas('tags', function (Builder $query) use ($tags) {
+            $tagIds = collect($tags)->pluck('id');
+
+            $query->whereIn('id', $tagIds);
+        });
+    }
+
+    public function scopeOrWithAnyTagsLike(Builder $query, $tags, string $type = null): Builder
+    {
+        $tags = static::convertToTagsLike($tags, $type);
+
+        return $query->orWhereHas('tags', function (Builder $query) use ($tags) {
+            $tagIds = collect($tags)->pluck('id');
+
+            $query->whereIn('id', $tagIds);
+        });
+    }
+
     public function tagsWithType(string $type = null): Collection
     {
         return $this->tags->filter(function (Tag $tag) use ($type) {
@@ -197,6 +219,23 @@ trait HasTags
             $className = static::getTagClassName();
 
             return $className::findFromString($value, $type);
+        });
+    }
+
+    protected static function convertToTagsLike($values, $type = null)
+    {
+        return collect($values)->map(function ($value) use ($type) {
+            if ($value instanceof Tag) {
+                if (isset($type) && $value->type != $type) {
+                    throw new InvalidArgumentException("Type was set to {$type} but tag is of type {$value->type}");
+                }
+
+                return $value;
+            }
+
+            $className = static::getTagClassName();
+
+            return $className::findFromLikeString($value, $type);
         });
     }
 
