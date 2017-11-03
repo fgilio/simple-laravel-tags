@@ -59,7 +59,7 @@ class Tag extends Model implements Sortable
     public static function findFromString(string $name, string $type = null)
     {
         return static::query()
-            ->where('name', $name)
+            ->where('slug', static::generateSlug($name))
             ->where('type', $type)
             ->first();
     }
