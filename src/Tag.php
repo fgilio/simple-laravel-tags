@@ -71,6 +71,20 @@ class Tag extends Model implements Sortable
             ->first();
     }
 
+    public static function findFromLikeString(string $name, string $type = null)
+    {
+        $slug = static::generateSlug($name);
+
+        return static::query()
+            ->where('slug', 'like', "%{$slug}%")
+            ->tap(function ($query) use ($type) {
+                if (is_null($type)) return $query;
+
+                return $query->where('type', $type);
+            })
+            ->first();
+    }
+
     protected static function findOrCreateFromString(string $name, string $type = null): self
     {
         $tag = static::findFromString($name, $type);
