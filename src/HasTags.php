@@ -236,7 +236,7 @@ trait HasTags
             $className = static::getTagClassName();
 
             return $className::findFromLikeString($value, $type);
-        });
+        })->flatten(1);
     }
 
     /**

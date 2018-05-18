@@ -66,7 +66,7 @@ class Tag extends Model implements Sortable
 
                 return $query->where('type', $type);
             })
-            ->first();
+            ->get();
     }
 
     protected static function findOrCreateFromString(string $name, string $type = null): self
