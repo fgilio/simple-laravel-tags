@@ -1,13 +1,19 @@
 {
-    "name": "spatie/laravel-tags",
-    "description": "Add tags and taggable behaviour to your Laravel app",
+    "name": "fgilio/simple-laravel-tags",
+    "description": "Forked from spatie/laravel-tags, without translation capabilities and with some extra query scopes",
     "keywords": [
-        "spatie",
-        "laravel-tags"
+        "fgilio",
+        "simple-laravel-tags"
     ],
-    "homepage": "https://github.com/spatie/laravel-tags",
+    "homepage": "https://github.com/fgilio/simple-laravel-tags",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Franco Gilio",
+            "email": "fgilio@publica.la",
+            "homepage": "https://publica.la",
+            "role": "CTO"
+        },
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
@@ -19,7 +25,6 @@
         "php": "^7.2",
         "laravel/framework": "~5.8",
         "spatie/eloquent-sortable": "^3.5",
-        "spatie/laravel-translatable": "^4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0",
