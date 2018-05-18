@@ -1,6 +1,7 @@
 # WIP
 
 This readme.md is still a copy&paste from spatie/laravel-tags
+Tests should be broken because they have not been updated when removing the translation feature
 
 ---
 
