@@ -1,4 +1,10 @@
-# Add tags and taggable behaviour to a Laravel app
+# WIP
+
+This readme.md is still a copy&paste from spatie/laravel-tags
+
+---
+
+## Add tags and taggable behaviour to a Laravel app
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-tags.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-tags)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -7,7 +13,7 @@
 [![StyleCI](https://styleci.io/repos/71335427/shield?branch=master)](https://styleci.io/repos/71335427)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-tags.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-tags)
 
-This package offers taggable behaviour for your models. After the package is installed the only thing you have to do is add the `HasTags` trait to an Eloquent model to make it taggable. 
+This package offers taggable behaviour for your models. After the package is installed the only thing you have to do is add the `HasTags` trait to an Eloquent model to make it taggable.
 
 But we didn't stop with the regular tagging capabilities you find in every package. Laravel Tags comes with batteries included. Out of the box it has support for [translating tags](https://docs.spatie.be/laravel-tags/v2/advanced-usage/adding-translations), [multiple tag types](https://docs.spatie.be/laravel-tags/v2/advanced-usage/using-types) and [sorting capabilities](https://docs.spatie.be/laravel-tags/v2/advanced-usage/sorting-tags).
 
@@ -34,12 +40,12 @@ $newsItem->detachTags(['tag4', 'tag5']);
 $newsItem->syncTags(['tag1', 'tag2']); // all other tags on this model will be detached
 
 //syncing tags with a type
-$newsItem->syncTagsWithType(['tag1', 'tag2'], 'typeA'); 
-$newsItem->syncTagsWithType(['tag1', 'tag2'], 'typeB'); 
+$newsItem->syncTagsWithType(['tag1', 'tag2'], 'typeA');
+$newsItem->syncTagsWithType(['tag1', 'tag2'], 'typeB');
 
 //retrieving tags with a type
-$newsItem->tagsWithType('typeA'); 
-$newsItem->tagsWithType('typeB'); 
+$newsItem->tagsWithType('typeA');
+$newsItem->tagsWithType('typeB');
 
 //retrieving models that have any of the given tags
 NewsItem::withAnyTags(['tag1', 'tag2'])->get();
@@ -156,7 +162,7 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie).
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License
