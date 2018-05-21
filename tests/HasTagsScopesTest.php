@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\Translatable\Test;
+namespace Fgilio\Translatable\Test;
 
-use Spatie\Tags\Tag;
-use Spatie\Tags\Test\TestCase;
-use Spatie\Tags\Test\TestModel;
+use Fgilio\Tags\Tag;
+use Fgilio\Tags\Test\TestCase;
+use Fgilio\Tags\Test\TestModel;
 
 class HasTagsScopesTest extends TestCase
 {
-    /** @var \Spatie\Tags\Test\TestModel */
+    /** @var \Fgilio\Tags\Test\TestModel */
     protected $testModel;
 
     public function setUp(): void

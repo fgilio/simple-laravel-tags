@@ -32,13 +32,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Tags\\": "src"
+            "Fgilio\\Tags\\": "src"
         }
     },
 
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Tags\\Test\\": "tests"
+            "Fgilio\\Tags\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -50,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Tags\\TagsServiceProvider"
+                "Fgilio\\Tags\\TagsServiceProvider"
             ]
         }
     }

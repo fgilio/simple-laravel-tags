@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Tags;
+namespace Fgilio\Tags;
 
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Model;
@@ -57,7 +57,7 @@ trait HasTags
     }
 
     /**
-     * @param string|array|\ArrayAccess|\Spatie\Tags\Tag $tags
+     * @param string|array|\ArrayAccess|\Fgilio\Tags\Tag $tags
      */
     public function setTagsAttribute($tags)
     {
@@ -72,7 +72,7 @@ trait HasTags
 
     /**
      * @param \Illuminate\Database\Eloquent\Builder $query
-     * @param array|\ArrayAccess|\Spatie\Tags\Tag $tags
+     * @param array|\ArrayAccess|\Fgilio\Tags\Tag $tags
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
@@ -93,7 +93,7 @@ trait HasTags
 
     /**
      * @param \Illuminate\Database\Eloquent\Builder $query
-     * @param array|\ArrayAccess|\Spatie\Tags\Tag $tags
+     * @param array|\ArrayAccess|\Fgilio\Tags\Tag $tags
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
@@ -164,7 +164,7 @@ trait HasTags
     }
 
     /**
-     * @param array|\ArrayAccess|\Spatie\Tags\Tag $tags
+     * @param array|\ArrayAccess|\Fgilio\Tags\Tag $tags
      *
      * @return $this
      */
@@ -180,7 +180,7 @@ trait HasTags
     }
 
     /**
-     * @param string|\Spatie\Tags\Tag $tag
+     * @param string|\Fgilio\Tags\Tag $tag
      *
      * @return $this
      */
@@ -208,7 +208,7 @@ trait HasTags
     }
 
     /**
-     * @param string|\Spatie\Tags\Tag $tag
+     * @param string|\Fgilio\Tags\Tag $tag
      *
      * @return $this
      */

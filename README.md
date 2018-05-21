@@ -85,8 +85,6 @@ $tag2->order_column; //returns 2
 $tag->swapOrder($anotherTag);
 ```
 
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
 ## Requirements
 
 This package requires Laravel 5.8 or higher, PHP 7.1.3 or higher and a database that supports `json` fields and functions such as MySQL 5.7 or higher. 
@@ -103,7 +101,7 @@ The package will automatically register itself.
 
 You can publish the migration with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Tags\TagsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Fgilio\Tags\TagsServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the `tags` and `taggables` tables by running the migrations:
@@ -114,7 +112,7 @@ php artisan migrate
 
 You can optionally publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Tags\TagsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Fgilio\Tags\TagsServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -145,7 +143,7 @@ If you've found a bug regarding security please mail [freek@spatie.be](mailto:fr
 
 ### Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+--Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.--
 
 ## Contributing
 
@@ -153,15 +151,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
-
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
-
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
+If you discover any security related issues, please email fgilio@publica.la instead of using the issue tracker.
 
 ## Credits
 
