@@ -2,10 +2,10 @@
 
 namespace Fgilio\Tags;
 
-use Fgilio\EloquentSortable\Sortable;
+use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Fgilio\EloquentSortable\SortableTrait;
+use Spatie\EloquentSortable\SortableTrait;
 use Illuminate\Database\Eloquent\Collection as DbCollection;
 
 class Tag extends Model implements Sortable
