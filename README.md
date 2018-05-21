@@ -1,7 +1,9 @@
 # WIP
 
-This readme.md is still a copy&paste from spatie/laravel-tags
-Tests should be broken because they have not been updated when removing the translation feature
+
+* This readme.md is still a copy&paste from spatie/laravel-tags
+* Tests should be broken because they have not been updated when removing the translation feature
+* This is in pre-release state and there will be breaking changes
 
 ---
 
