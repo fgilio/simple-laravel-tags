@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Tags;
+namespace Fgilio\Tags;
 
-use Spatie\EloquentSortable\Sortable;
+use Fgilio\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\EloquentSortable\SortableTrait;
+use Fgilio\EloquentSortable\SortableTrait;
 use Illuminate\Database\Eloquent\Collection as DbCollection;
 
 class Tag extends Model implements Sortable
@@ -27,7 +27,7 @@ class Tag extends Model implements Sortable
      * @param array|\ArrayAccess $values
      * @param string|null        $type
      *
-     * @return \Spatie\Tags\Tag|static
+     * @return \Fgilio\Tags\Tag|static
      */
     public static function findOrCreate($values, string $type = null)
     {

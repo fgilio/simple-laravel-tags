@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Tags\Test;
+namespace Fgilio\Tags\Test;
 
-use Spatie\Tags\HasTags;
+use Fgilio\Tags\HasTags;
 use Illuminate\Database\Eloquent\Model;
 
 class TestModel extends Model

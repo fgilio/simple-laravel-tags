@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Tags;
+namespace Fgilio\Tags;
 
 use Illuminate\Support\ServiceProvider;
 

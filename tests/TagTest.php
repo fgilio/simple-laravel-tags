@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Translatable\Test;
+namespace Fgilio\Translatable\Test;
 
-use Spatie\Tags\Tag;
-use Spatie\Tags\Test\TestCase;
+use Fgilio\Tags\Tag;
+use Fgilio\Tags\Test\TestCase;
 
 class TagTest extends TestCase
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Tags\Test;
+namespace Fgilio\Tags\Test;
 
 use DB;
 use Dotenv\Dotenv;
-use Spatie\Tags\TagsServiceProvider;
+use Fgilio\Tags\TagsServiceProvider;
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Translatable\TranslatableServiceProvider;
+use Fgilio\Translatable\TranslatableServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -41,7 +41,7 @@ abstract class TestCase extends Orchestra
         $app['config']->set('database.connections.mysql', [
             'driver' => 'mysql',
             'host' => '127.0.0.1',
-            'database' => env('DB_DATABASE', 'laravel_tags'),
+            'database' => env('DB_DATABASE', 'simple_laravel_tags'),
             'username' => env('DB_USERNAME', 'username'),
             'password' => env('DB_PASSWORD', 'password'),
             'charset' => 'utf8',
@@ -80,7 +80,7 @@ abstract class TestCase extends Orchestra
 
         $rows
             ->map(function ($row) {
-                return $row->Tables_in_laravel_tags;
+                return $row->Tables_in_simple_laravel_tags;
             })
             ->each(function (string $tableName) {
                 DB::statement("DROP TABLE {$tableName}");
